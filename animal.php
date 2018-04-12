@@ -11,19 +11,12 @@ $countinents = array(
 $new_array = [];
 foreach ($countinents as $country => $animals) {
   foreach ($animals as $animal) {
-//    if (strpos($animal, ' ' ) !== false) {
-//   return count(explode(' ', $animal)) === 2)
     if (count(explode(' ', $animal)) === 2) {
      $new_array[] = $animal;
     }
   }
 }
-//
-//echo '<pre>';
-//var_dump($new_array);
 
-//echo count(explode(' ', $new_array[8]));
-//
 $animal1 = $animal2 = [];
 foreach($new_array as $value)
   list($animal1[], $animal2[]) = explode(' ', $value);
