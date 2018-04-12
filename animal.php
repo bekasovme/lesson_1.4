@@ -11,13 +11,15 @@ $countinents = array(
 $new_array = [];
 foreach ($countinents as $country => $animals) {
   foreach ($animals as $animal) {
-   if (strpos($animal, ' ') !== false) {
+    if (strpos($animal, ' ') return count(explode(' ', $animal)) === 2;)
+//   if (strpos($animal, ' ' ) !== false) {
      $new_array[] = $animal;
     }
   }
 }
+
 echo '<pre>';
-var_dump($animal);
+var_dump($new_array);
 
 //
 //$animal1 = $animal2 = [];
