@@ -21,6 +21,6 @@ $animal1 = $animal2 = [];
 foreach($new_array as $value)
   list($animal1[], $animal2[]) = explode(' ', $value);
 
-shuffle($animal1);
+shuffle($animal2);
 foreach($animal1 as $key=>$animal)
   echo "{$animal} {$animal2[$key]}" . PHP_EOL, '<br>';
