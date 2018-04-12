@@ -7,19 +7,23 @@ $countinents = array(
     'australia' => array('canis lupus dingo',	'macropodidae', 'raphus cucullatus'),
     'antarctica' => array('ursus maritimus', 'aptenodytes patagonicus', 'nyctea scandiaca')
 );
+
 $new_array = [];
 foreach ($countinents as $country => $animals) {
   foreach ($animals as $animal) {
-//    if (strpos($animal, ' ') !== false) {
-    if (strpos($animal, ' ') === 2) {
-      $new_array[] = $animal;
+   if (strpos($animal, ' ') !== false) {
+     $new_array[] = $animal;
     }
   }
 }
-$animal1 = $animal2 = [];
-foreach($new_array as $value)
-  list($animal1[], $animal2[]) = explode(' ', $value);
+echo '<pre>';
+var_dump($animal);
 
-shuffle($animal1);
-foreach($animal1 as $key=>$animal)
-  echo "{$animal} {$animal2[$key]}" . PHP_EOL, '<br>';
+//
+//$animal1 = $animal2 = [];
+//foreach($new_array as $value)
+//  list($animal1[], $animal2[]) = explode(' ', $value);
+//
+//shuffle($animal1);
+//foreach($animal1 as $key=>$animal)
+//  echo "{$animal} {$animal2[$key]}" . PHP_EOL, '<br>';
