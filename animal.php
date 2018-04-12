@@ -22,7 +22,7 @@ foreach ($countinents as $country => $animals) {
 echo '<pre>';
 var_dump($new_array);
 
-echo count(explode(' ', $new_array[8]));
+//echo count(explode(' ', $new_array[8]));
 //
 //$animal1 = $animal2 = [];
 //foreach($new_array as $value)
