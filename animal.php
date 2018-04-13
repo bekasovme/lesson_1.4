@@ -11,15 +11,15 @@ $countinents = array(
 $new_array = [];
 $animal1 = $animal2 = [];
 foreach ($countinents as $country => $animals) {
-  foreach ($animals as $animal) {
-    if (count(explode(' ', $animal)) === 2) {
+	foreach ($animals as $animal) {
+		if (count(explode(' ', $animal)) === 2) {
 			list($animal1[], $animal2[]) = explode(' ', $animal);
-    	$new_array[] = $animal;
-    }
-  }
+			$new_array[] = $animal;
+		}
+	}
 }
 
 shuffle($animal2);
 foreach($animal1 as $key=>$animal) {
-  echo "{$animal} {$animal2[$key]}" . PHP_EOL, '<br>';
+	echo "{$animal} {$animal2[$key]}" . PHP_EOL, '<br>';
 }
