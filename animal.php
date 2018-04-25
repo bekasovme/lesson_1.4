@@ -23,3 +23,5 @@ shuffle($animal2);
 foreach($animal1 as $key=>$animal) {
 	echo "{$animal} {$animal2[$key]}" . PHP_EOL, '<br>';
 }
+
+//test test test
